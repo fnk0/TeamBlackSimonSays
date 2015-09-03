@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		2C2F892D1B9893AC002F4F4A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2F892C1B9893AC002F4F4A /* AppDelegate.swift */; };
-		2C2F892F1B9893AC002F4F4A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2F892E1B9893AC002F4F4A /* ViewController.swift */; };
+		2C2F892F1B9893AC002F4F4A /* GameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2F892E1B9893AC002F4F4A /* GameController.swift */; };
 		2C2F89321B9893AC002F4F4A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C2F89301B9893AC002F4F4A /* Main.storyboard */; };
 		2C2F89341B9893AC002F4F4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C2F89331B9893AC002F4F4A /* Assets.xcassets */; };
 		2C2F89371B9893AC002F4F4A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C2F89351B9893AC002F4F4A /* LaunchScreen.storyboard */; };
 		2C2F89421B9893AC002F4F4A /* TeamBlackSimonSaysTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2F89411B9893AC002F4F4A /* TeamBlackSimonSaysTests.swift */; };
 		2C2F894D1B9893AC002F4F4A /* TeamBlackSimonSaysUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2F894C1B9893AC002F4F4A /* TeamBlackSimonSaysUITests.swift */; };
+		2CC031971B98A090000BA48C /* SimonGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC031961B98A090000BA48C /* SimonGame.swift */; settings = {ASSET_TAGS = (); }; };
+		2CC031991B98A14E000BA48C /* SimonColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC031981B98A14E000BA48C /* SimonColor.swift */; settings = {ASSET_TAGS = (); }; };
+		2CC0319B1B98A1B3000BA48C /* SimonEvaluator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC0319A1B98A1B3000BA48C /* SimonEvaluator.swift */; settings = {ASSET_TAGS = (); }; };
+		2CC031A21B98A52B000BA48C /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC031A11B98A52B000BA48C /* UIColorExtension.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +40,7 @@
 /* Begin PBXFileReference section */
 		2C2F89291B9893AC002F4F4A /* TeamBlackSimonSays.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TeamBlackSimonSays.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C2F892C1B9893AC002F4F4A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2C2F892E1B9893AC002F4F4A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2C2F892E1B9893AC002F4F4A /* GameController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameController.swift; sourceTree = "<group>"; };
 		2C2F89311B9893AC002F4F4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2C2F89331B9893AC002F4F4A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2C2F89361B9893AC002F4F4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +51,10 @@
 		2C2F89481B9893AC002F4F4A /* TeamBlackSimonSaysUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TeamBlackSimonSaysUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C2F894C1B9893AC002F4F4A /* TeamBlackSimonSaysUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamBlackSimonSaysUITests.swift; sourceTree = "<group>"; };
 		2C2F894E1B9893AC002F4F4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2CC031961B98A090000BA48C /* SimonGame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimonGame.swift; sourceTree = "<group>"; };
+		2CC031981B98A14E000BA48C /* SimonColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimonColor.swift; sourceTree = "<group>"; };
+		2CC0319A1B98A1B3000BA48C /* SimonEvaluator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimonEvaluator.swift; sourceTree = "<group>"; };
+		2CC031A11B98A52B000BA48C /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +105,10 @@
 		2C2F892B1B9893AC002F4F4A /* TeamBlackSimonSays */ = {
 			isa = PBXGroup;
 			children = (
+				2CC031A01B98A513000BA48C /* ExtensionHelpers */,
+				2CC0319F1B98A506000BA48C /* SimonLogic */,
 				2C2F892C1B9893AC002F4F4A /* AppDelegate.swift */,
-				2C2F892E1B9893AC002F4F4A /* ViewController.swift */,
+				2C2F892E1B9893AC002F4F4A /* GameController.swift */,
 				2C2F89301B9893AC002F4F4A /* Main.storyboard */,
 				2C2F89331B9893AC002F4F4A /* Assets.xcassets */,
 				2C2F89351B9893AC002F4F4A /* LaunchScreen.storyboard */,
@@ -123,6 +133,24 @@
 				2C2F894E1B9893AC002F4F4A /* Info.plist */,
 			);
 			path = TeamBlackSimonSaysUITests;
+			sourceTree = "<group>";
+		};
+		2CC0319F1B98A506000BA48C /* SimonLogic */ = {
+			isa = PBXGroup;
+			children = (
+				2CC031961B98A090000BA48C /* SimonGame.swift */,
+				2CC031981B98A14E000BA48C /* SimonColor.swift */,
+				2CC0319A1B98A1B3000BA48C /* SimonEvaluator.swift */,
+			);
+			name = SimonLogic;
+			sourceTree = "<group>";
+		};
+		2CC031A01B98A513000BA48C /* ExtensionHelpers */ = {
+			isa = PBXGroup;
+			children = (
+				2CC031A11B98A52B000BA48C /* UIColorExtension.swift */,
+			);
+			name = ExtensionHelpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -255,7 +283,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C2F892F1B9893AC002F4F4A /* ViewController.swift in Sources */,
+				2CC031A21B98A52B000BA48C /* UIColorExtension.swift in Sources */,
+				2CC031991B98A14E000BA48C /* SimonColor.swift in Sources */,
+				2CC031971B98A090000BA48C /* SimonGame.swift in Sources */,
+				2C2F892F1B9893AC002F4F4A /* GameController.swift in Sources */,
+				2CC0319B1B98A1B3000BA48C /* SimonEvaluator.swift in Sources */,
 				2C2F892D1B9893AC002F4F4A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -481,6 +513,7 @@
 				2C2F89531B9893AC002F4F4A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2C2F89541B9893AC002F4F4A /* Build configuration list for PBXNativeTarget "TeamBlackSimonSaysTests" */ = {
 			isa = XCConfigurationList;
@@ -489,6 +522,7 @@
 				2C2F89561B9893AC002F4F4A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2C2F89571B9893AC002F4F4A /* Build configuration list for PBXNativeTarget "TeamBlackSimonSaysUITests" */ = {
 			isa = XCConfigurationList;
@@ -497,6 +531,7 @@
 				2C2F89591B9893AC002F4F4A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
