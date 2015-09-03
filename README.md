@@ -20,3 +20,7 @@ Simon Says iOS app Written in Swift for Mobile Apps development class at Oklahom
 
 * [How to use CocoaPods Video](https://www.youtube.com/watch?v=iEAjvNRdZa0&spfreload=10)
 * [Feature Branch Workflow](https://www.atlassian.com/git/tutorials/comparing-workflows/forking-workflow)
+
+## Frameworks and 3rd Party libraries
+
+* [DKChainableAnimationKit](https://github.com/Draveness/DKChainableAnimationKit/tree/swift-2.0)
