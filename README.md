@@ -5,11 +5,11 @@ Simon Says iOS app Written in Swift for Mobile Apps development class at Oklahom
 ## Team Members:
 
 #### Developers
-* Andreo Gabilheri, Marcus (andreog@okstate.edu)
-* Hobble, Katie (khobble@okstate.edu)
-* Fiveash, Tom (thomas.fiveash@okstate.edu)
-* Jespersen, Ben (ben.jespersen@okstate.ede)
-* Tu, Thinh (thinh.tu@okstate.edu)
+* Andreo Gabilheri, Marcus (andreog@okstate.edu) - Architect / Ui stuff
+* Hobble, Katie (khobble@okstate.edu) UI Stuff
+* Fiveash, Tom (thomas.fiveash@okstate.edu) - Logic / Backend stuff
+* Jespersen, Ben (ben.jespersen@okstate.ede) - Logic / Backend stuff
+* Tu, Thinh (thinh.tu@okstate.edu) - Logic / Backend stuff
 
 #### Graphi Designers
 
