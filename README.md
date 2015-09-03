@@ -20,6 +20,8 @@ Simon Says iOS app Written in Swift for Mobile Apps development class at Oklahom
 
 * [How to use CocoaPods Video](https://www.youtube.com/watch?v=iEAjvNRdZa0&spfreload=10)
 * [Feature Branch Workflow](https://www.atlassian.com/git/tutorials/comparing-workflows/forking-workflow)
+* [Alcatraz package Manager](http://alcatraz.io/)
+* [CocoaPods](https://cocoapods.org/)
 
 ## Frameworks and 3rd Party libraries
 
