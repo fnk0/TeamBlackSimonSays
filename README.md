@@ -1,7 +1,6 @@
 # TeamBlackSimonSays
 Simon Says iOS app Written in Swift for Mobile Apps development class at Oklahoma State University 
 
-
 ## Team Members:
 
 #### Developers
@@ -16,3 +15,7 @@ Simon Says iOS app Written in Swift for Mobile Apps development class at Oklahom
 * Luke Hess, Team Leader: luke.hess@okstate.edu
 * Cale Potts: cale.potts@okstate.edu
 * Tyler Groh: tyler.groh@okstate.edu
+
+## Useful Links:
+
+* [Feature Branch Workflow](https://www.atlassian.com/git/tutorials/comparing-workflows/forking-workflow)
