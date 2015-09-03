@@ -18,4 +18,5 @@ Simon Says iOS app Written in Swift for Mobile Apps development class at Oklahom
 
 ## Useful Links:
 
+* [How to use CocoaPods Video](https://www.youtube.com/watch?v=iEAjvNRdZa0&spfreload=10)
 * [Feature Branch Workflow](https://www.atlassian.com/git/tutorials/comparing-workflows/forking-workflow)
