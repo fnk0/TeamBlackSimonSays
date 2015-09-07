@@ -17,9 +17,15 @@ class SimonGame {
     // get right to win the game
     let defaultLevel = 12
     
-    // Holds which button press this is
-    var currentBtnPress = 0
+    // Holds which level is the player playing
+    var currentLevel = 0
     
     // Holds the colors that will represent this game
     var colors = [SimonColor]()
+    
+    // This function will be called every time the user presses a button
+    // It should return true if the user wins the game or false if the user loses
+    func evaluate(color : SimonColor) -> Bool{
+        return colors[currentLevel] == color
+    }
 }

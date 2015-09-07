@@ -17,8 +17,8 @@
 		2CA594641B98A856000E64E9 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 2CA594631B98A856000E64E9 /* Podfile */; settings = {ASSET_TAGS = (); }; };
 		2CC031971B98A090000BA48C /* SimonGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC031961B98A090000BA48C /* SimonGame.swift */; settings = {ASSET_TAGS = (); }; };
 		2CC031991B98A14E000BA48C /* SimonColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC031981B98A14E000BA48C /* SimonColor.swift */; settings = {ASSET_TAGS = (); }; };
-		2CC0319B1B98A1B3000BA48C /* SimonEvaluator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC0319A1B98A1B3000BA48C /* SimonEvaluator.swift */; settings = {ASSET_TAGS = (); }; };
 		2CC031A21B98A52B000BA48C /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC031A11B98A52B000BA48C /* UIColorExtension.swift */; settings = {ASSET_TAGS = (); }; };
+		2CCA73131B9DF1AE0067AEFC /* GameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CCA73121B9DF1AE0067AEFC /* GameState.swift */; settings = {ASSET_TAGS = (); }; };
 		7ABEEE5CA1AA76BD4FC0F3F1 /* Pods_TeamBlackSimonSays.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68D2DEA530393ED8150108B3 /* Pods_TeamBlackSimonSays.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
@@ -56,8 +56,8 @@
 		2CA594631B98A856000E64E9 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		2CC031961B98A090000BA48C /* SimonGame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimonGame.swift; sourceTree = "<group>"; };
 		2CC031981B98A14E000BA48C /* SimonColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimonColor.swift; sourceTree = "<group>"; };
-		2CC0319A1B98A1B3000BA48C /* SimonEvaluator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimonEvaluator.swift; sourceTree = "<group>"; };
 		2CC031A11B98A52B000BA48C /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		2CCA73121B9DF1AE0067AEFC /* GameState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameState.swift; sourceTree = "<group>"; };
 		45006F1F300223E5F8C20E2D /* Pods-TeamBlackSimonSays.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TeamBlackSimonSays.release.xcconfig"; path = "Pods/Target Support Files/Pods-TeamBlackSimonSays/Pods-TeamBlackSimonSays.release.xcconfig"; sourceTree = "<group>"; };
 		68D2DEA530393ED8150108B3 /* Pods_TeamBlackSimonSays.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TeamBlackSimonSays.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6D152B4974D2AA34F1A8F06 /* Pods-TeamBlackSimonSays.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TeamBlackSimonSays.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TeamBlackSimonSays/Pods-TeamBlackSimonSays.debug.xcconfig"; sourceTree = "<group>"; };
@@ -150,7 +150,7 @@
 			children = (
 				2CC031961B98A090000BA48C /* SimonGame.swift */,
 				2CC031981B98A14E000BA48C /* SimonColor.swift */,
-				2CC0319A1B98A1B3000BA48C /* SimonEvaluator.swift */,
+				2CCA73121B9DF1AE0067AEFC /* GameState.swift */,
 			);
 			name = SimonLogic;
 			sourceTree = "<group>";
@@ -362,11 +362,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CCA73131B9DF1AE0067AEFC /* GameState.swift in Sources */,
 				2CC031A21B98A52B000BA48C /* UIColorExtension.swift in Sources */,
 				2CC031991B98A14E000BA48C /* SimonColor.swift in Sources */,
 				2CC031971B98A090000BA48C /* SimonGame.swift in Sources */,
 				2C2F892F1B9893AC002F4F4A /* GameController.swift in Sources */,
-				2CC0319B1B98A1B3000BA48C /* SimonEvaluator.swift in Sources */,
 				2C2F892D1B9893AC002F4F4A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
