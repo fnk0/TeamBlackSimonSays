@@ -8,12 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		2C2F892D1B9893AC002F4F4A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2F892C1B9893AC002F4F4A /* AppDelegate.swift */; };
-		2C2F892F1B9893AC002F4F4A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2F892E1B9893AC002F4F4A /* ViewController.swift */; };
+		2C2F892F1B9893AC002F4F4A /* GameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2F892E1B9893AC002F4F4A /* GameController.swift */; };
 		2C2F89321B9893AC002F4F4A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C2F89301B9893AC002F4F4A /* Main.storyboard */; };
 		2C2F89341B9893AC002F4F4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C2F89331B9893AC002F4F4A /* Assets.xcassets */; };
 		2C2F89371B9893AC002F4F4A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C2F89351B9893AC002F4F4A /* LaunchScreen.storyboard */; };
 		2C2F89421B9893AC002F4F4A /* TeamBlackSimonSaysTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2F89411B9893AC002F4F4A /* TeamBlackSimonSaysTests.swift */; };
 		2C2F894D1B9893AC002F4F4A /* TeamBlackSimonSaysUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2F894C1B9893AC002F4F4A /* TeamBlackSimonSaysUITests.swift */; };
+		2CA594641B98A856000E64E9 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 2CA594631B98A856000E64E9 /* Podfile */; settings = {ASSET_TAGS = (); }; };
+		2CC031971B98A090000BA48C /* SimonGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC031961B98A090000BA48C /* SimonGame.swift */; settings = {ASSET_TAGS = (); }; };
+		2CC031991B98A14E000BA48C /* SimonColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC031981B98A14E000BA48C /* SimonColor.swift */; settings = {ASSET_TAGS = (); }; };
+		2CC0319B1B98A1B3000BA48C /* SimonEvaluator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC0319A1B98A1B3000BA48C /* SimonEvaluator.swift */; settings = {ASSET_TAGS = (); }; };
+		2CC031A21B98A52B000BA48C /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC031A11B98A52B000BA48C /* UIColorExtension.swift */; settings = {ASSET_TAGS = (); }; };
+		7ABEEE5CA1AA76BD4FC0F3F1 /* Pods_TeamBlackSimonSays.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68D2DEA530393ED8150108B3 /* Pods_TeamBlackSimonSays.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +42,7 @@
 /* Begin PBXFileReference section */
 		2C2F89291B9893AC002F4F4A /* TeamBlackSimonSays.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TeamBlackSimonSays.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C2F892C1B9893AC002F4F4A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2C2F892E1B9893AC002F4F4A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2C2F892E1B9893AC002F4F4A /* GameController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameController.swift; sourceTree = "<group>"; };
 		2C2F89311B9893AC002F4F4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2C2F89331B9893AC002F4F4A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2C2F89361B9893AC002F4F4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +53,14 @@
 		2C2F89481B9893AC002F4F4A /* TeamBlackSimonSaysUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TeamBlackSimonSaysUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C2F894C1B9893AC002F4F4A /* TeamBlackSimonSaysUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamBlackSimonSaysUITests.swift; sourceTree = "<group>"; };
 		2C2F894E1B9893AC002F4F4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2CA594631B98A856000E64E9 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		2CC031961B98A090000BA48C /* SimonGame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimonGame.swift; sourceTree = "<group>"; };
+		2CC031981B98A14E000BA48C /* SimonColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimonColor.swift; sourceTree = "<group>"; };
+		2CC0319A1B98A1B3000BA48C /* SimonEvaluator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimonEvaluator.swift; sourceTree = "<group>"; };
+		2CC031A11B98A52B000BA48C /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		45006F1F300223E5F8C20E2D /* Pods-TeamBlackSimonSays.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TeamBlackSimonSays.release.xcconfig"; path = "Pods/Target Support Files/Pods-TeamBlackSimonSays/Pods-TeamBlackSimonSays.release.xcconfig"; sourceTree = "<group>"; };
+		68D2DEA530393ED8150108B3 /* Pods_TeamBlackSimonSays.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TeamBlackSimonSays.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6D152B4974D2AA34F1A8F06 /* Pods-TeamBlackSimonSays.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TeamBlackSimonSays.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TeamBlackSimonSays/Pods-TeamBlackSimonSays.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7ABEEE5CA1AA76BD4FC0F3F1 /* Pods_TeamBlackSimonSays.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,10 +92,13 @@
 		2C2F89201B9893AC002F4F4A = {
 			isa = PBXGroup;
 			children = (
+				2CA594631B98A856000E64E9 /* Podfile */,
 				2C2F892B1B9893AC002F4F4A /* TeamBlackSimonSays */,
 				2C2F89401B9893AC002F4F4A /* TeamBlackSimonSaysTests */,
 				2C2F894B1B9893AC002F4F4A /* TeamBlackSimonSaysUITests */,
 				2C2F892A1B9893AC002F4F4A /* Products */,
+				2DC35E3B0BE5B4E328B2FC69 /* Pods */,
+				5407CECB8698729A49458819 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,8 +115,10 @@
 		2C2F892B1B9893AC002F4F4A /* TeamBlackSimonSays */ = {
 			isa = PBXGroup;
 			children = (
+				2CC031A01B98A513000BA48C /* ExtensionHelpers */,
+				2CC0319F1B98A506000BA48C /* SimonLogic */,
 				2C2F892C1B9893AC002F4F4A /* AppDelegate.swift */,
-				2C2F892E1B9893AC002F4F4A /* ViewController.swift */,
+				2C2F892E1B9893AC002F4F4A /* GameController.swift */,
 				2C2F89301B9893AC002F4F4A /* Main.storyboard */,
 				2C2F89331B9893AC002F4F4A /* Assets.xcassets */,
 				2C2F89351B9893AC002F4F4A /* LaunchScreen.storyboard */,
@@ -125,6 +145,41 @@
 			path = TeamBlackSimonSaysUITests;
 			sourceTree = "<group>";
 		};
+		2CC0319F1B98A506000BA48C /* SimonLogic */ = {
+			isa = PBXGroup;
+			children = (
+				2CC031961B98A090000BA48C /* SimonGame.swift */,
+				2CC031981B98A14E000BA48C /* SimonColor.swift */,
+				2CC0319A1B98A1B3000BA48C /* SimonEvaluator.swift */,
+			);
+			name = SimonLogic;
+			sourceTree = "<group>";
+		};
+		2CC031A01B98A513000BA48C /* ExtensionHelpers */ = {
+			isa = PBXGroup;
+			children = (
+				2CC031A11B98A52B000BA48C /* UIColorExtension.swift */,
+			);
+			name = ExtensionHelpers;
+			sourceTree = "<group>";
+		};
+		2DC35E3B0BE5B4E328B2FC69 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F6D152B4974D2AA34F1A8F06 /* Pods-TeamBlackSimonSays.debug.xcconfig */,
+				45006F1F300223E5F8C20E2D /* Pods-TeamBlackSimonSays.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5407CECB8698729A49458819 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				68D2DEA530393ED8150108B3 /* Pods_TeamBlackSimonSays.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +187,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2C2F89511B9893AC002F4F4A /* Build configuration list for PBXNativeTarget "TeamBlackSimonSays" */;
 			buildPhases = (
+				D47B818F6F2E147236DD4541 /* Check Pods Manifest.lock */,
 				2C2F89251B9893AC002F4F4A /* Sources */,
 				2C2F89261B9893AC002F4F4A /* Frameworks */,
 				2C2F89271B9893AC002F4F4A /* Resources */,
+				DF008D5CA018992C7541EFF9 /* Embed Pods Frameworks */,
+				D3B1DF878AEE7BFF5621D737 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -230,6 +288,7 @@
 			files = (
 				2C2F89371B9893AC002F4F4A /* LaunchScreen.storyboard in Resources */,
 				2C2F89341B9893AC002F4F4A /* Assets.xcassets in Resources */,
+				2CA594641B98A856000E64E9 /* Podfile in Resources */,
 				2C2F89321B9893AC002F4F4A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -250,12 +309,64 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		D3B1DF878AEE7BFF5621D737 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TeamBlackSimonSays/Pods-TeamBlackSimonSays-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D47B818F6F2E147236DD4541 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DF008D5CA018992C7541EFF9 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TeamBlackSimonSays/Pods-TeamBlackSimonSays-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2C2F89251B9893AC002F4F4A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C2F892F1B9893AC002F4F4A /* ViewController.swift in Sources */,
+				2CC031A21B98A52B000BA48C /* UIColorExtension.swift in Sources */,
+				2CC031991B98A14E000BA48C /* SimonColor.swift in Sources */,
+				2CC031971B98A090000BA48C /* SimonGame.swift in Sources */,
+				2C2F892F1B9893AC002F4F4A /* GameController.swift in Sources */,
+				2CC0319B1B98A1B3000BA48C /* SimonEvaluator.swift in Sources */,
 				2C2F892D1B9893AC002F4F4A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -394,6 +505,7 @@
 		};
 		2C2F89521B9893AC002F4F4A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F6D152B4974D2AA34F1A8F06 /* Pods-TeamBlackSimonSays.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TeamBlackSimonSays/Info.plist;
@@ -405,6 +517,7 @@
 		};
 		2C2F89531B9893AC002F4F4A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45006F1F300223E5F8C20E2D /* Pods-TeamBlackSimonSays.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TeamBlackSimonSays/Info.plist;
@@ -481,6 +594,7 @@
 				2C2F89531B9893AC002F4F4A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2C2F89541B9893AC002F4F4A /* Build configuration list for PBXNativeTarget "TeamBlackSimonSaysTests" */ = {
 			isa = XCConfigurationList;
@@ -489,6 +603,7 @@
 				2C2F89561B9893AC002F4F4A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2C2F89571B9893AC002F4F4A /* Build configuration list for PBXNativeTarget "TeamBlackSimonSaysUITests" */ = {
 			isa = XCConfigurationList;
@@ -497,6 +612,7 @@
 				2C2F89591B9893AC002F4F4A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
