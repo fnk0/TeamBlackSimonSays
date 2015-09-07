@@ -1,0 +1,21 @@
+PODS:
+  - DKChainableAnimationKit (1.5.0)
+
+DEPENDENCIES:
+  - DKChainableAnimationKit (from `https://github.com/Draveness/DKChainableAnimationKit.git`,
+    branch `swift-2.0`)
+
+EXTERNAL SOURCES:
+  DKChainableAnimationKit:
+    :branch: swift-2.0
+    :git: https://github.com/Draveness/DKChainableAnimationKit.git
+
+CHECKOUT OPTIONS:
+  DKChainableAnimationKit:
+    :commit: f26141f6ca25eeeb57b4631a4b39b3b5bf33c068
+    :git: https://github.com/Draveness/DKChainableAnimationKit.git
+
+SPEC CHECKSUMS:
+  DKChainableAnimationKit: 194ba986e657136c0f0bde4933d96deaf7802ed1
+
+COCOAPODS: 0.38.2
