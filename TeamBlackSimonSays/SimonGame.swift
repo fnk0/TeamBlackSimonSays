@@ -42,8 +42,8 @@ class SimonGame {
     }
     
     func startGame() {
-        for i in 0...defaultLevel {
-            colors[i] =  SimonColor(rawValue: Int(arc4random_uniform(UInt32(4))))!
+        for _ in 0...defaultLevel {
+            colors.append(SimonColor(rawValue: Int(arc4random_uniform(UInt32(4))))!)
         }
     }
     

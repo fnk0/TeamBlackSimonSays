@@ -297,6 +297,7 @@
 				TargetAttributes = {
 					2C2F89281B9893AC002F4F4A = {
 						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = TVVT3U24R7;
 					};
 					2C2F893C1B9893AC002F4F4A = {
 						CreatedOnToolsVersion = 7.0;
@@ -568,10 +569,15 @@
 			baseConfigurationReference = F6D152B4974D2AA34F1A8F06 /* Pods-TeamBlackSimonSays.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = TeamBlackSimonSays/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.blackteam.TeamBlackSimonSays;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -580,10 +586,15 @@
 			baseConfigurationReference = 45006F1F300223E5F8C20E2D /* Pods-TeamBlackSimonSays.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = TeamBlackSimonSays/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.blackteam.TeamBlackSimonSays;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
