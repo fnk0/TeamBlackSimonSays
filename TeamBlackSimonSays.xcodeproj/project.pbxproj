@@ -14,11 +14,24 @@
 		2C2F89371B9893AC002F4F4A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C2F89351B9893AC002F4F4A /* LaunchScreen.storyboard */; };
 		2C2F89421B9893AC002F4F4A /* TeamBlackSimonSaysTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2F89411B9893AC002F4F4A /* TeamBlackSimonSaysTests.swift */; };
 		2C2F894D1B9893AC002F4F4A /* TeamBlackSimonSaysUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2F894C1B9893AC002F4F4A /* TeamBlackSimonSaysUITests.swift */; };
-		2CA594641B98A856000E64E9 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 2CA594631B98A856000E64E9 /* Podfile */; settings = {ASSET_TAGS = (); }; };
-		2CC031971B98A090000BA48C /* SimonGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC031961B98A090000BA48C /* SimonGame.swift */; settings = {ASSET_TAGS = (); }; };
-		2CC031991B98A14E000BA48C /* SimonColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC031981B98A14E000BA48C /* SimonColor.swift */; settings = {ASSET_TAGS = (); }; };
-		2CC031A21B98A52B000BA48C /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC031A11B98A52B000BA48C /* UIColorExtension.swift */; settings = {ASSET_TAGS = (); }; };
-		2CCA73131B9DF1AE0067AEFC /* GameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CCA73121B9DF1AE0067AEFC /* GameState.swift */; settings = {ASSET_TAGS = (); }; };
+		2CA594641B98A856000E64E9 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 2CA594631B98A856000E64E9 /* Podfile */; };
+		2CC031971B98A090000BA48C /* SimonGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC031961B98A090000BA48C /* SimonGame.swift */; };
+		2CC031991B98A14E000BA48C /* SimonColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC031981B98A14E000BA48C /* SimonColor.swift */; };
+		2CC031A21B98A52B000BA48C /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC031A11B98A52B000BA48C /* UIColorExtension.swift */; };
+		2CCA73131B9DF1AE0067AEFC /* GameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CCA73121B9DF1AE0067AEFC /* GameState.swift */; };
+		2CDC39B11BA3CC1800DD772E /* RED_LIT_GLOW.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CDC39A41BA3CC1800DD772E /* RED_LIT_GLOW.png */; };
+		2CDC39B21BA3CC1800DD772E /* GREEN_LIT_GLOW.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CDC39A51BA3CC1800DD772E /* GREEN_LIT_GLOW.png */; };
+		2CDC39B31BA3CC1800DD772E /* YELLOW_LIT_GLOW.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CDC39A61BA3CC1800DD772E /* YELLOW_LIT_GLOW.png */; };
+		2CDC39B41BA3CC1800DD772E /* BLUE_LIT_GLOW.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CDC39A71BA3CC1800DD772E /* BLUE_LIT_GLOW.png */; };
+		2CDC39B51BA3CC1800DD772E /* GREEN_UNLIT.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CDC39A81BA3CC1800DD772E /* GREEN_UNLIT.png */; };
+		2CDC39B61BA3CC1800DD772E /* LAYOUT.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CDC39A91BA3CC1800DD772E /* LAYOUT.png */; };
+		2CDC39B71BA3CC1800DD772E /* RED_UNLIT.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CDC39AA1BA3CC1800DD772E /* RED_UNLIT.png */; };
+		2CDC39B81BA3CC1800DD772E /* YELLOW_LIT.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CDC39AB1BA3CC1800DD772E /* YELLOW_LIT.png */; };
+		2CDC39B91BA3CC1800DD772E /* BLUE_UNLIT.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CDC39AC1BA3CC1800DD772E /* BLUE_UNLIT.png */; };
+		2CDC39BA1BA3CC1800DD772E /* Green_Lit.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CDC39AD1BA3CC1800DD772E /* Green_Lit.png */; };
+		2CDC39BB1BA3CC1800DD772E /* BLUE_LIT.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CDC39AE1BA3CC1800DD772E /* BLUE_LIT.png */; };
+		2CDC39BC1BA3CC1800DD772E /* RED_LIT.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CDC39AF1BA3CC1800DD772E /* RED_LIT.png */; };
+		2CDC39BD1BA3CC1800DD772E /* YELLOW_UNLIT.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CDC39B01BA3CC1800DD772E /* YELLOW_UNLIT.png */; };
 		7ABEEE5CA1AA76BD4FC0F3F1 /* Pods_TeamBlackSimonSays.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68D2DEA530393ED8150108B3 /* Pods_TeamBlackSimonSays.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
@@ -58,6 +71,19 @@
 		2CC031981B98A14E000BA48C /* SimonColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimonColor.swift; sourceTree = "<group>"; };
 		2CC031A11B98A52B000BA48C /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		2CCA73121B9DF1AE0067AEFC /* GameState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameState.swift; sourceTree = "<group>"; };
+		2CDC39A41BA3CC1800DD772E /* RED_LIT_GLOW.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = RED_LIT_GLOW.png; path = images/RED_LIT_GLOW.png; sourceTree = "<group>"; };
+		2CDC39A51BA3CC1800DD772E /* GREEN_LIT_GLOW.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = GREEN_LIT_GLOW.png; path = images/GREEN_LIT_GLOW.png; sourceTree = "<group>"; };
+		2CDC39A61BA3CC1800DD772E /* YELLOW_LIT_GLOW.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = YELLOW_LIT_GLOW.png; path = images/YELLOW_LIT_GLOW.png; sourceTree = "<group>"; };
+		2CDC39A71BA3CC1800DD772E /* BLUE_LIT_GLOW.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = BLUE_LIT_GLOW.png; path = images/BLUE_LIT_GLOW.png; sourceTree = "<group>"; };
+		2CDC39A81BA3CC1800DD772E /* GREEN_UNLIT.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = GREEN_UNLIT.png; path = images/GREEN_UNLIT.png; sourceTree = "<group>"; };
+		2CDC39A91BA3CC1800DD772E /* LAYOUT.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = LAYOUT.png; path = images/LAYOUT.png; sourceTree = "<group>"; };
+		2CDC39AA1BA3CC1800DD772E /* RED_UNLIT.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = RED_UNLIT.png; path = images/RED_UNLIT.png; sourceTree = "<group>"; };
+		2CDC39AB1BA3CC1800DD772E /* YELLOW_LIT.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = YELLOW_LIT.png; path = images/YELLOW_LIT.png; sourceTree = "<group>"; };
+		2CDC39AC1BA3CC1800DD772E /* BLUE_UNLIT.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = BLUE_UNLIT.png; path = images/BLUE_UNLIT.png; sourceTree = "<group>"; };
+		2CDC39AD1BA3CC1800DD772E /* Green_Lit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Green_Lit.png; path = images/Green_Lit.png; sourceTree = "<group>"; };
+		2CDC39AE1BA3CC1800DD772E /* BLUE_LIT.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = BLUE_LIT.png; path = images/BLUE_LIT.png; sourceTree = "<group>"; };
+		2CDC39AF1BA3CC1800DD772E /* RED_LIT.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = RED_LIT.png; path = images/RED_LIT.png; sourceTree = "<group>"; };
+		2CDC39B01BA3CC1800DD772E /* YELLOW_UNLIT.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = YELLOW_UNLIT.png; path = images/YELLOW_UNLIT.png; sourceTree = "<group>"; };
 		45006F1F300223E5F8C20E2D /* Pods-TeamBlackSimonSays.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TeamBlackSimonSays.release.xcconfig"; path = "Pods/Target Support Files/Pods-TeamBlackSimonSays/Pods-TeamBlackSimonSays.release.xcconfig"; sourceTree = "<group>"; };
 		68D2DEA530393ED8150108B3 /* Pods_TeamBlackSimonSays.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TeamBlackSimonSays.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6D152B4974D2AA34F1A8F06 /* Pods-TeamBlackSimonSays.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TeamBlackSimonSays.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TeamBlackSimonSays/Pods-TeamBlackSimonSays.debug.xcconfig"; sourceTree = "<group>"; };
@@ -115,6 +141,7 @@
 		2C2F892B1B9893AC002F4F4A /* TeamBlackSimonSays */ = {
 			isa = PBXGroup;
 			children = (
+				2CDC39A31BA3CC0B00DD772E /* images */,
 				2CC031A01B98A513000BA48C /* ExtensionHelpers */,
 				2CC0319F1B98A506000BA48C /* SimonLogic */,
 				2C2F892C1B9893AC002F4F4A /* AppDelegate.swift */,
@@ -161,6 +188,26 @@
 				2CC031A11B98A52B000BA48C /* UIColorExtension.swift */,
 			);
 			name = ExtensionHelpers;
+			sourceTree = "<group>";
+		};
+		2CDC39A31BA3CC0B00DD772E /* images */ = {
+			isa = PBXGroup;
+			children = (
+				2CDC39A41BA3CC1800DD772E /* RED_LIT_GLOW.png */,
+				2CDC39A51BA3CC1800DD772E /* GREEN_LIT_GLOW.png */,
+				2CDC39A61BA3CC1800DD772E /* YELLOW_LIT_GLOW.png */,
+				2CDC39A71BA3CC1800DD772E /* BLUE_LIT_GLOW.png */,
+				2CDC39A81BA3CC1800DD772E /* GREEN_UNLIT.png */,
+				2CDC39A91BA3CC1800DD772E /* LAYOUT.png */,
+				2CDC39AA1BA3CC1800DD772E /* RED_UNLIT.png */,
+				2CDC39AB1BA3CC1800DD772E /* YELLOW_LIT.png */,
+				2CDC39AC1BA3CC1800DD772E /* BLUE_UNLIT.png */,
+				2CDC39AD1BA3CC1800DD772E /* Green_Lit.png */,
+				2CDC39AE1BA3CC1800DD772E /* BLUE_LIT.png */,
+				2CDC39AF1BA3CC1800DD772E /* RED_LIT.png */,
+				2CDC39B01BA3CC1800DD772E /* YELLOW_UNLIT.png */,
+			);
+			name = images;
 			sourceTree = "<group>";
 		};
 		2DC35E3B0BE5B4E328B2FC69 /* Pods */ = {
@@ -286,9 +333,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CDC39B51BA3CC1800DD772E /* GREEN_UNLIT.png in Resources */,
+				2CDC39BC1BA3CC1800DD772E /* RED_LIT.png in Resources */,
+				2CDC39BA1BA3CC1800DD772E /* Green_Lit.png in Resources */,
+				2CDC39B81BA3CC1800DD772E /* YELLOW_LIT.png in Resources */,
+				2CDC39B11BA3CC1800DD772E /* RED_LIT_GLOW.png in Resources */,
+				2CDC39BD1BA3CC1800DD772E /* YELLOW_UNLIT.png in Resources */,
+				2CDC39B71BA3CC1800DD772E /* RED_UNLIT.png in Resources */,
 				2C2F89371B9893AC002F4F4A /* LaunchScreen.storyboard in Resources */,
 				2C2F89341B9893AC002F4F4A /* Assets.xcassets in Resources */,
 				2CA594641B98A856000E64E9 /* Podfile in Resources */,
+				2CDC39B61BA3CC1800DD772E /* LAYOUT.png in Resources */,
+				2CDC39B41BA3CC1800DD772E /* BLUE_LIT_GLOW.png in Resources */,
+				2CDC39B31BA3CC1800DD772E /* YELLOW_LIT_GLOW.png in Resources */,
+				2CDC39B91BA3CC1800DD772E /* BLUE_UNLIT.png in Resources */,
+				2CDC39BB1BA3CC1800DD772E /* BLUE_LIT.png in Resources */,
+				2CDC39B21BA3CC1800DD772E /* GREEN_LIT_GLOW.png in Resources */,
 				2C2F89321B9893AC002F4F4A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

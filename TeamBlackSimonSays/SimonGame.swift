@@ -38,11 +38,12 @@ class SimonGame {
     
     required init(delegate : SimonGameProtocol) {
         self.delegate = delegate
+        startGame()
     }
     
-    func starGame() {
+    func startGame() {
         for i in 0...defaultLevel {
-            colors[i] =  SimonColor(rawValue: Int(arc4random_uniform(UInt32(4))) + 1)!
+            colors[i] =  SimonColor(rawValue: Int(arc4random_uniform(UInt32(4))))!
         }
     }
     
