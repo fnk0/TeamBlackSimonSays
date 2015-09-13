@@ -53,42 +53,39 @@ class GameController: UIViewController, SimonGameProtocol {
     }
     
     func animateBtn(index: Int, position: Int, colors: [SimonColor]) {
-        print("Playing button with index: \(index)")
         let button = buttons[colors[index].rawValue]
-        button.highlighted = true
-        let color = button.currentTitleColor
-        button.layer.shadowColor = color.CGColor
-        button.layer.shadowRadius = 10.0
-        button.layer.shadowOpacity = 0.9
-        button.layer.shadowOffset = CGSizeZero
-        button.layer.masksToBounds = false
-        
-        NSThread.sleepForTimeInterval(0.5)
-        
-        dispatch_after(500, dispatch_get_main_queue(), {
-            button.layer.shadowColor = UIColor.clearColor().CGColor
-            button.layer.shadowRadius = 0.0
-            button.layer.shadowOpacity = 0.0
-            button.layer.masksToBounds = true
-            button.highlighted = false
-            let newIndex = index + 1
-            self.playButtons(newIndex, position: position, colors: colors)
-        })
-        
-//        if let originalImage = button.backgroundImageForState(UIControlState.Normal) {
-//            if let image = button.backgroundImageForState(UIControlState.Highlighted) {
-//                button.setImage(image, forState: UIControlState.Normal)
-//           
-//            }
-//            
+        print("Playing button with index: \(index) and color \(colors[index])")
+        UIView.animateWithDuration(SimonGame.HighlightTime / 2,
+            delay: 0.0,
+            options: UIViewAnimationOptions.CurveEaseOut,
+            animations: {
+                button.alpha = 0.5
+                button.highlighted = true
+                let color = button.currentTitleColor
+                button.layer.shadowColor = color.CGColor
+                button.layer.shadowRadius = 10.0
+                button.layer.shadowOpacity = 0.9
+                button.layer.shadowOffset = CGSizeZero
+                button.layer.masksToBounds = false
+            },
+            completion: { finished in
+                UIView.animateWithDuration(SimonGame.HighlightTime / 2,
+                    delay: 0.0,
+                    options: UIViewAnimationOptions.CurveEaseOut,
+                    animations: {
+                        button.alpha = 1.0
+                        button.highlighted = false
+                        button.layer.shadowColor = UIColor.clearColor().CGColor
+                        button.layer.shadowRadius = 0.0
+                        button.layer.shadowOpacity = 0.0
+                        button.layer.masksToBounds = true
 
-//                if let bgImage = button.backgroundImageForState(UIControlState.Normal) {
-//                    button.setImage(bgImage, forState: UIControlState.Highlighted)
-//                    button.setImage(originalImage, forState: UIControlState.Normal)
-//               
-//                }
-//            })
-//        }
+                    },
+                    completion: { finished in
+                        let newIndex = index + 1
+                        self.playButtons(newIndex, position: position, colors: colors)
+            })
+        })
     }
     
     @IBAction func handleScreenTap(sender: AnyObject) {
@@ -111,7 +108,9 @@ class GameController: UIViewController, SimonGameProtocol {
     }
     
     func playButtons(start: Int, position: Int, colors: [SimonColor]) {
+        gameState = GameState.SequencePlaying
         if start == position {
+            gameState = GameState.HumanPlaying
             return
         }
         animateBtn(start, position: position, colors: colors)
