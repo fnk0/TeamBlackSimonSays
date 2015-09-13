@@ -10,6 +10,8 @@ import Foundation
 
 enum GameState {
     
+    case Playing
+    case NotPlaying
     case HumanPlaying
     case SequencePlaying
     

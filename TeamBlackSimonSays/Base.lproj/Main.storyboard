@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SNp-oH-Eze" userLabel="Red" customClass="TransparentButton" customModule="TeamBlackSimonSays" customModuleProvider="target">
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SNp-oH-Eze" userLabel="Red" customClass="TransparentButton" customModule="TeamBlackSimonSays" customModuleProvider="target">
                                 <rect key="frame" x="350" y="350" width="110" height="110"/>
                                 <animations/>
                                 <constraints>
@@ -26,10 +26,15 @@
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="110" id="eNL-6L-7yf"/>
                                     <constraint firstAttribute="width" constant="110" id="kQj-sS-jjg"/>
                                 </constraints>
-                                <state key="normal" image="RED_UNLIT.png"/>
-                                <state key="highlighted" image="RED_LIT_GLOW.png"/>
+                                <state key="normal" image="RED_UNLIT.png">
+                                    <color key="titleShadowColor" red="0.6470588235294118" green="0.098039215686274508" blue="0.066666666666666666" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <state key="highlighted" image="RED_LIT.png">
+                                    <color key="titleColor" red="0.93725490196078431" green="0.60392156862745094" blue="0.60392156862745094" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.93725490196078431" green="0.60392156862745094" blue="0.60392156862745094" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
-                                    <action selector="handleRed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="g0E-CD-BRa"/>
+                                    <action selector="handleButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8jE-54-kA7"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xrW-Mx-KDf" userLabel="Blue" customClass="TransparentButton" customModule="TeamBlackSimonSays" customModuleProvider="target">
@@ -39,10 +44,15 @@
                                     <constraint firstAttribute="height" constant="110" id="4Pb-R7-jtJ"/>
                                     <constraint firstAttribute="width" constant="110" id="K1Z-Ky-K0F"/>
                                 </constraints>
-                                <state key="normal" image="BLUE_UNLIT.png"/>
-                                <state key="highlighted" image="BLUE_LIT_GLOW.png"/>
+                                <state key="normal" image="BLUE_UNLIT.png">
+                                    <color key="titleShadowColor" red="0.023529411764705882" green="0.25490196078431371" blue="0.53333333333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <state key="highlighted" image="BLUE_LIT.png">
+                                    <color key="titleColor" red="0.30980392156862746" green="0.76470588235294112" blue="0.96862745098039216" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.30980392156862746" green="0.76470588235294112" blue="0.96862745098039216" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
-                                    <action selector="handleBlue:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kEb-ZD-rEQ"/>
+                                    <action selector="handleButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vg3-CV-bK5"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LEVEL" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cIh-Yc-zas">
@@ -116,20 +126,7 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sPg-fD-hJP" userLabel="Green" customClass="TransparentButton" customModule="TeamBlackSimonSays" customModuleProvider="target">
-                                <rect key="frame" x="245" y="250" width="110" height="110"/>
-                                <animations/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="110" id="hyH-Nj-4qY"/>
-                                    <constraint firstAttribute="width" constant="110" id="yWS-ac-klU"/>
-                                </constraints>
-                                <state key="normal" image="GREEN_UNLIT.png"/>
-                                <state key="highlighted" image="GREEN_LIT_GLOW.png"/>
-                                <connections>
-                                    <action selector="handleGreen:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oR2-Ea-4ra"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="150" verticalHuggingPriority="150" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4aZ-GD-K6w" userLabel="Yellow" customClass="TransparentButton" customModule="TeamBlackSimonSays" customModuleProvider="target">
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" horizontalHuggingPriority="150" verticalHuggingPriority="150" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4aZ-GD-K6w" userLabel="Yellow" customClass="TransparentButton" customModule="TeamBlackSimonSays" customModuleProvider="target">
                                 <rect key="frame" x="140" y="350" width="110" height="110"/>
                                 <animations/>
                                 <constraints>
@@ -138,10 +135,34 @@
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="110" id="W6o-RJ-zMp"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="110" id="mWq-iU-h5X"/>
                                 </constraints>
-                                <state key="normal" image="YELLOW_UNLIT.png"/>
-                                <state key="highlighted" image="YELLOW_LIT_GLOW.png"/>
+                                <state key="normal" image="YELLOW_UNLIT.png">
+                                    <color key="titleShadowColor" red="0.72156862745098038" green="0.70980392156862748" blue="0.11764705882352941" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <state key="highlighted" image="YELLOW_LIT.png">
+                                    <color key="titleColor" red="1" green="0.96078431372549022" blue="0.61568627450980395" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="1" green="0.96078431372549022" blue="0.61568627450980395" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
-                                    <action selector="handleYellow:" destination="BYZ-38-t0r" eventType="touchUpInside" id="610-mW-s39"/>
+                                    <action selector="handleButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="v94-Hp-Vw5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sPg-fD-hJP" userLabel="Green" customClass="TransparentButton" customModule="TeamBlackSimonSays" customModuleProvider="target">
+                                <rect key="frame" x="245" y="250" width="110" height="110"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="110" id="hyH-Nj-4qY"/>
+                                    <constraint firstAttribute="width" constant="110" id="yWS-ac-klU"/>
+                                </constraints>
+                                <state key="normal" image="GREEN_UNLIT.png">
+                                    <color key="titleColor" red="0.50588235294117645" green="0.7803921568627451" blue="0.51764705882352935" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.50588235290000005" green="0.78039215689999997" blue="0.51764705879999995" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <state key="highlighted" image="Green_Lit.png">
+                                    <color key="titleColor" red="0.50588235290000005" green="0.78039215689999997" blue="0.51764705879999995" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.50588235294117645" green="0.7803921568627451" blue="0.51764705882352935" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="handleButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nQp-Gu-ht8"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -181,6 +202,17 @@
                             <constraint firstItem="bvs-x3-Zs2" firstAttribute="firstBaseline" secondItem="CER-NZ-Cq5" secondAttribute="firstBaseline" id="yqI-rq-ejl"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="blueButton" destination="xrW-Mx-KDf" id="DFo-Gj-iof"/>
+                        <outlet property="currentLevelLabel" destination="7v7-JL-r9Y" id="exy-7o-Mgc"/>
+                        <outlet property="currentScoreLabel" destination="CER-NZ-Cq5" id="PKl-2f-AQG"/>
+                        <outlet property="greenButton" destination="sPg-fD-hJP" id="P9r-ZH-kfV"/>
+                        <outlet property="highScoreLabel" destination="wET-fC-FIG" id="fgX-xl-odv"/>
+                        <outlet property="redButton" destination="SNp-oH-Eze" id="7NL-Go-LSQ"/>
+                        <outlet property="startLabel" destination="1UR-JT-fe8" id="Ws1-Pe-cfb"/>
+                        <outlet property="winLostLabel" destination="gw9-xG-eBb" id="xhi-pr-Yzt"/>
+                        <outlet property="yellowButton" destination="4aZ-GD-K6w" id="6lb-pa-48L"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -188,13 +220,13 @@
         </scene>
     </scenes>
     <resources>
-        <image name="BLUE_LIT_GLOW.png" width="335" height="335"/>
+        <image name="BLUE_LIT.png" width="235" height="235"/>
         <image name="BLUE_UNLIT.png" width="235" height="235"/>
-        <image name="GREEN_LIT_GLOW.png" width="335" height="335"/>
         <image name="GREEN_UNLIT.png" width="235" height="235"/>
-        <image name="RED_LIT_GLOW.png" width="335" height="335"/>
+        <image name="Green_Lit.png" width="235" height="235"/>
+        <image name="RED_LIT.png" width="235" height="235"/>
         <image name="RED_UNLIT.png" width="235" height="235"/>
-        <image name="YELLOW_LIT_GLOW.png" width="335" height="335"/>
+        <image name="YELLOW_LIT.png" width="235" height="235"/>
         <image name="YELLOW_UNLIT.png" width="235" height="235"/>
     </resources>
 </document>
