@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C0BE5A61BA50D6D003FA36C /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0BE5A51BA50D6D003FA36C /* UIViewExtension.swift */; };
+		2C0BE5A81BA50E4B003FA36C /* TransparentButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0BE5A71BA50E4B003FA36C /* TransparentButton.swift */; };
 		2C2F892D1B9893AC002F4F4A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2F892C1B9893AC002F4F4A /* AppDelegate.swift */; };
 		2C2F892F1B9893AC002F4F4A /* GameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2F892E1B9893AC002F4F4A /* GameController.swift */; };
 		2C2F89321B9893AC002F4F4A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C2F89301B9893AC002F4F4A /* Main.storyboard */; };
@@ -53,6 +55,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2C0BE5A51BA50D6D003FA36C /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		2C0BE5A71BA50E4B003FA36C /* TransparentButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransparentButton.swift; sourceTree = "<group>"; };
 		2C2F89291B9893AC002F4F4A /* TeamBlackSimonSays.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TeamBlackSimonSays.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C2F892C1B9893AC002F4F4A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2C2F892E1B9893AC002F4F4A /* GameController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameController.swift; sourceTree = "<group>"; };
@@ -142,7 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				2CDC39A31BA3CC0B00DD772E /* images */,
-				2CC031A01B98A513000BA48C /* ExtensionHelpers */,
+				2CC031A01B98A513000BA48C /* UI Helpers */,
 				2CC0319F1B98A506000BA48C /* SimonLogic */,
 				2C2F892C1B9893AC002F4F4A /* AppDelegate.swift */,
 				2C2F892E1B9893AC002F4F4A /* GameController.swift */,
@@ -182,12 +186,14 @@
 			name = SimonLogic;
 			sourceTree = "<group>";
 		};
-		2CC031A01B98A513000BA48C /* ExtensionHelpers */ = {
+		2CC031A01B98A513000BA48C /* UI Helpers */ = {
 			isa = PBXGroup;
 			children = (
 				2CC031A11B98A52B000BA48C /* UIColorExtension.swift */,
+				2C0BE5A51BA50D6D003FA36C /* UIViewExtension.swift */,
+				2C0BE5A71BA50E4B003FA36C /* TransparentButton.swift */,
 			);
-			name = ExtensionHelpers;
+			name = "UI Helpers";
 			sourceTree = "<group>";
 		};
 		2CDC39A31BA3CC0B00DD772E /* images */ = {
@@ -292,6 +298,7 @@
 		2C2F89211B9893AC002F4F4A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0710;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Gabilheri Apps";
 				TargetAttributes = {
@@ -423,10 +430,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C0BE5A81BA50E4B003FA36C /* TransparentButton.swift in Sources */,
 				2CCA73131B9DF1AE0067AEFC /* GameState.swift in Sources */,
 				2CC031A21B98A52B000BA48C /* UIColorExtension.swift in Sources */,
 				2CC031991B98A14E000BA48C /* SimonColor.swift in Sources */,
 				2CC031971B98A090000BA48C /* SimonGame.swift in Sources */,
+				2C0BE5A61BA50D6D003FA36C /* UIViewExtension.swift in Sources */,
 				2C2F892F1B9893AC002F4F4A /* GameController.swift in Sources */,
 				2C2F892D1B9893AC002F4F4A /* AppDelegate.swift in Sources */,
 			);

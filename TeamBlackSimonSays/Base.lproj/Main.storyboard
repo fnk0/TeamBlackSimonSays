@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SNp-oH-Eze" userLabel="Red">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SNp-oH-Eze" userLabel="Red" customClass="TransparentButton" customModule="TeamBlackSimonSays" customModuleProvider="target">
                                 <rect key="frame" x="350" y="350" width="110" height="110"/>
                                 <animations/>
                                 <constraints>
@@ -32,7 +32,7 @@
                                     <action selector="handleRed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="g0E-CD-BRa"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xrW-Mx-KDf" userLabel="Blue">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xrW-Mx-KDf" userLabel="Blue" customClass="TransparentButton" customModule="TeamBlackSimonSays" customModuleProvider="target">
                                 <rect key="frame" x="245" y="442" width="110" height="110"/>
                                 <animations/>
                                 <constraints>
@@ -116,7 +116,7 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sPg-fD-hJP" userLabel="Green">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sPg-fD-hJP" userLabel="Green" customClass="TransparentButton" customModule="TeamBlackSimonSays" customModuleProvider="target">
                                 <rect key="frame" x="245" y="250" width="110" height="110"/>
                                 <animations/>
                                 <constraints>
@@ -129,7 +129,7 @@
                                     <action selector="handleGreen:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oR2-Ea-4ra"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="150" verticalHuggingPriority="150" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4aZ-GD-K6w" userLabel="Yellow">
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="150" verticalHuggingPriority="150" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4aZ-GD-K6w" userLabel="Yellow" customClass="TransparentButton" customModule="TeamBlackSimonSays" customModuleProvider="target">
                                 <rect key="frame" x="140" y="350" width="110" height="110"/>
                                 <animations/>
                                 <constraints>
