@@ -13,7 +13,7 @@ protocol SimonGameProtocol {
     
     func didWinTheGame()
     func didLostTheGame()
-    func playButtons(position : Int, colors : [SimonColor])
+    func playButtons(start : Int, position : Int, colors : [SimonColor])
     
 }
 
@@ -21,6 +21,8 @@ protocol SimonGameProtocol {
 // Every time the user starts a new game a new instance of this class should be created.
 // The idea is to replace the current instance with a new one.
 class SimonGame {
+    
+    static let HighlightTime = 1.0
     
     var delegate : SimonGameProtocol?
     
@@ -38,13 +40,14 @@ class SimonGame {
     
     required init(delegate : SimonGameProtocol) {
         self.delegate = delegate
-        startGame()
     }
     
     func startGame() {
+        print("Starting game...")
         for _ in 0...defaultLevel {
             colors.append(SimonColor(rawValue: Int(arc4random_uniform(UInt32(4))))!)
         }
+        delegate?.playButtons(0, position: 12, colors: colors)
     }
     
     // This function will be called every time the user presses a button
@@ -71,6 +74,6 @@ class SimonGame {
     
     func startNewLevel() {
         currentPress = 0
-        delegate?.playButtons(currentLevel, colors: colors)
+        delegate?.playButtons(0, position: currentLevel, colors: colors)
     }
 }
