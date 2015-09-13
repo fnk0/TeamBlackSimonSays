@@ -59,7 +59,7 @@ class GameController: UIViewController, SimonGameProtocol {
             delay: 0.0,
             options: UIViewAnimationOptions.CurveEaseOut,
             animations: {
-                button.alpha = 0.5
+                button.alpha = 0.75
                 button.highlighted = true
                 let color = button.currentTitleColor
                 button.layer.shadowColor = color.CGColor
@@ -90,6 +90,8 @@ class GameController: UIViewController, SimonGameProtocol {
     
     @IBAction func handleScreenTap(sender: AnyObject) {
         if gameState == GameState.NotPlaying {
+            self.winLostLabel.text = ""
+            self.startLabel.text = ""
             game?.startGame()
         }
         return
@@ -117,11 +119,17 @@ class GameController: UIViewController, SimonGameProtocol {
     }
     
     func didWinTheGame() {
-        
+        print("Win the game!")
+        gameState = GameState.NotPlaying
+        self.winLostLabel.text = "You win!!"
+        self.startLabel.text = "TAP THE SCREEN TO START"
     }
     
     func didLostTheGame() {
-        
+        print("Lost the game!")
+        gameState = GameState.NotPlaying
+        self.winLostLabel.text = "You lose :("
+        self.startLabel.text = "TAP THE SCREEN TO START"
     }
 }
 

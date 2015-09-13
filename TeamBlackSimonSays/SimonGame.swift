@@ -31,7 +31,7 @@ class SimonGame {
     let defaultLevel = 12
     
     // Holds which level is the player playing
-    var currentLevel = 0
+    var currentLevel = 1
     
     var currentPress = 0
     
@@ -43,11 +43,13 @@ class SimonGame {
     }
     
     func startGame() {
+        colors = [SimonColor]()
         print("Starting game...")
         for _ in 0...defaultLevel {
             colors.append(SimonColor(rawValue: Int(arc4random_uniform(UInt32(4))))!)
         }
-        delegate?.playButtons(0, position: 12, colors: colors)
+        currentLevel = 1
+        startNewLevel()
     }
     
     // This function will be called every time the user presses a button
@@ -61,7 +63,7 @@ class SimonGame {
                 delegate?.didWinTheGame()
             }
             
-            if currentPress == currentLevel {
+            if currentPress == (currentLevel - 1) {
                 currentLevel++
                 startNewLevel()
             } else {
@@ -73,6 +75,7 @@ class SimonGame {
     }
     
     func startNewLevel() {
+        print("Starting new level...")
         currentPress = 0
         delegate?.playButtons(0, position: currentLevel, colors: colors)
     }
