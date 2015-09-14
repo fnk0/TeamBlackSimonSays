@@ -36,6 +36,7 @@ class GameController: UIViewController, SimonGameProtocol {
         buttons.append(greenButton)
         buttons.append(yellowButton)
         winLostLabel.text = ""
+        updateHighScore()
     }
     
     override func didReceiveMemoryWarning() {
@@ -78,12 +79,12 @@ class GameController: UIViewController, SimonGameProtocol {
                         button.layer.shadowRadius = 0.0
                         button.layer.shadowOpacity = 0.0
                         button.layer.masksToBounds = true
-
+                        
                     },
                     completion: { finished in
                         let newIndex = index + 1
                         self.playButtons(newIndex, position: position, colors: colors)
-            })
+                })
         })
     }
     
@@ -120,6 +121,7 @@ class GameController: UIViewController, SimonGameProtocol {
     
     func didWinTheGame() {
         print("Win the game!")
+        updateHighScore()
         gameState = GameState.NotPlaying
         self.winLostLabel.text = "You win!!"
         self.startLabel.text = "TAP THE SCREEN TO START"
@@ -127,6 +129,7 @@ class GameController: UIViewController, SimonGameProtocol {
     
     func didLostTheGame() {
         print("Lost the game!")
+        updateHighScore()
         gameState = GameState.NotPlaying
         self.winLostLabel.text = "You lose :("
         self.startLabel.text = "TAP THE SCREEN TO START"
@@ -134,18 +137,24 @@ class GameController: UIViewController, SimonGameProtocol {
     
     func updateHighScore() {
         
-        var scoreToSave = Int(currentLevelLabel.text!)
-        
-        if let score = game?.defaults.valueForKey(SimonGame.highScoreString) as! String? {
+        if var level = Int(currentLevelLabel.text!) {
             
-            if scoreToSave < Int(score) {
-                scoreToSave = Int(score)
+            level = level - 1
+            
+            if let score = game?.defaults.valueForKey(SimonGame.highScoreString) as! Int? {
+                
+                if level < score {
+                    level = score
+                }
+                
             }
             
+            game!.defaults.setValue(level, forKey: SimonGame.highScoreString)
+            highScoreLabel.text = "\(level)"
+            print ("\(level)")
+            
         }
-        
-        game!.defaults.setValue(scoreToSave, forKey: SimonGame.highScoreString)
-
     }
+    
 }
 
