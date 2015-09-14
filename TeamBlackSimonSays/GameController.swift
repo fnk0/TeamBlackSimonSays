@@ -13,7 +13,6 @@ class GameController: UIViewController, SimonGameProtocol {
     var game : SimonGame?
     var gameState = GameState.NotPlaying
     
-    @IBOutlet weak var currentScoreLabel: UILabel!
     @IBOutlet weak var highScoreLabel: UILabel!
     @IBOutlet weak var startLabel: UILabel!
     @IBOutlet weak var winLostLabel: UILabel!
@@ -27,6 +26,8 @@ class GameController: UIViewController, SimonGameProtocol {
     
     var buttons : [TransparentButton] = []
     
+    var userDefaults : NSUserDefaults?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -36,7 +37,6 @@ class GameController: UIViewController, SimonGameProtocol {
         buttons.append(greenButton)
         buttons.append(yellowButton)
         winLostLabel.text = ""
-        currentScoreLabel.text = ""
     }
     
     override func didReceiveMemoryWarning() {
@@ -59,7 +59,7 @@ class GameController: UIViewController, SimonGameProtocol {
             delay: 0.0,
             options: UIViewAnimationOptions.CurveEaseOut,
             animations: {
-                button.alpha = 0.75
+                button.alpha = 0.90
                 button.highlighted = true
                 let color = button.currentTitleColor
                 button.layer.shadowColor = color.CGColor
@@ -110,6 +110,7 @@ class GameController: UIViewController, SimonGameProtocol {
     }
     
     func playButtons(start: Int, position: Int, colors: [SimonColor]) {
+        currentLevelLabel.text = "\(position)"
         gameState = GameState.SequencePlaying
         if start == position {
             gameState = GameState.HumanPlaying
