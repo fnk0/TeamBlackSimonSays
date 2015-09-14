@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8187.4" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9046" systemVersion="15A279b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8151.3"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9035"/>
         <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
@@ -15,174 +15,189 @@
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
-                    <view key="view" alpha="0.80000000000000004" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xrW-Mx-KDf" userLabel="Blue" customClass="TransparentButton" customModule="TeamBlackSimonSays" customModuleProvider="target">
-                                <rect key="frame" x="245" y="442" width="110" height="110"/>
+                            <view opaque="NO" alpha="0.84999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mLD-nC-91J">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xrW-Mx-KDf" userLabel="Blue" customClass="TransparentButton" customModule="TeamBlackSimonSays" customModuleProvider="target">
+                                        <rect key="frame" x="245" y="472" width="110" height="110"/>
+                                        <animations/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="110" id="7OA-3t-OdG"/>
+                                            <constraint firstAttribute="width" secondItem="xrW-Mx-KDf" secondAttribute="height" multiplier="1:1" id="EaG-uf-EXO"/>
+                                            <constraint firstAttribute="width" constant="110" id="abo-wc-381"/>
+                                        </constraints>
+                                        <state key="normal" image="BLUE_UNLIT.png">
+                                            <color key="titleShadowColor" red="0.023529411764705882" green="0.25490196078431371" blue="0.53333333333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <state key="highlighted" image="BLUE_LIT.png">
+                                            <color key="titleColor" red="0.30980392156862746" green="0.76470588235294112" blue="0.96862745098039216" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" red="0.30980392156862746" green="0.76470588235294112" blue="0.96862745098039216" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="handleButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vg3-CV-bK5"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LEVEL" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cIh-Yc-zas">
+                                        <rect key="frame" x="272" y="395" width="56" height="28"/>
+                                        <animations/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="28" id="YyA-2n-78K"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="20"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7v7-JL-r9Y">
+                                        <rect key="frame" x="291" y="423" width="18" height="41"/>
+                                        <animations/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="18" id="4wA-e8-dD8"/>
+                                            <constraint firstAttribute="height" constant="41" id="hni-73-996"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="30"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wET-fC-FIG">
+                                        <rect key="frame" x="357" y="42" width="21" height="48"/>
+                                        <animations/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="21" id="Zhm-y0-sJY"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="30"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HIGH SCORE:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a6m-t9-jak">
+                                        <rect key="frame" x="223" y="52" width="126" height="28"/>
+                                        <animations/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="28" id="EZF-y4-E9w"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="20"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="YOU LOST!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gw9-xG-eBb">
+                                        <rect key="frame" x="250" y="166" width="104" height="28"/>
+                                        <animations/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="28" id="L5E-Fg-w3G"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="20"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TAP THE SCREEN TO START" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1UR-JT-fe8">
+                                        <rect key="frame" x="172" y="202" width="257" height="28"/>
+                                        <animations/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="28" id="l39-AN-x9O"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="20"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SNp-oH-Eze" userLabel="Red" customClass="TransparentButton" customModule="TeamBlackSimonSays" customModuleProvider="target">
+                                        <rect key="frame" x="356" y="373" width="110" height="110"/>
+                                        <animations/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="SNp-oH-Eze" secondAttribute="height" multiplier="1:1" id="3qJ-mz-dlt"/>
+                                            <constraint firstAttribute="width" constant="110" id="r5C-3q-Wsf"/>
+                                        </constraints>
+                                        <state key="normal" image="RED_UNLIT.png">
+                                            <color key="titleColor" red="0.93725490199999995" green="0.60392156860000001" blue="0.60392156860000001" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" red="0.6470588235294118" green="0.098039215686274508" blue="0.066666666666666666" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <state key="highlighted" image="RED_LIT.png">
+                                            <color key="titleColor" red="0.93725490196078431" green="0.60392156862745094" blue="0.60392156862745094" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" red="0.93725490196078431" green="0.60392156862745094" blue="0.60392156862745094" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="handleButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8jE-54-kA7"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" horizontalHuggingPriority="150" verticalHuggingPriority="150" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4aZ-GD-K6w" userLabel="Yellow" customClass="TransparentButton" customModule="TeamBlackSimonSays" customModuleProvider="target">
+                                        <rect key="frame" x="139" y="373" width="110" height="110"/>
+                                        <animations/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="110" id="ouM-Cp-3PX"/>
+                                            <constraint firstAttribute="width" secondItem="4aZ-GD-K6w" secondAttribute="height" multiplier="1:1" id="yxR-XJ-VPj"/>
+                                            <constraint firstAttribute="width" constant="110" id="z9L-XV-5Ns"/>
+                                        </constraints>
+                                        <state key="normal" image="YELLOW_UNLIT.png">
+                                            <color key="titleShadowColor" red="0.72156862745098038" green="0.70980392156862748" blue="0.11764705882352941" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <state key="highlighted" image="YELLOW_LIT.png">
+                                            <color key="titleColor" red="1" green="0.96078431372549022" blue="0.61568627450980395" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" red="1" green="0.96078431372549022" blue="0.61568627450980395" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="handleButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="v94-Hp-Vw5"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sPg-fD-hJP" userLabel="Green" customClass="TransparentButton" customModule="TeamBlackSimonSays" customModuleProvider="target">
+                                        <rect key="frame" x="244" y="277" width="110" height="110"/>
+                                        <animations/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="sPg-fD-hJP" secondAttribute="height" multiplier="1:1" id="UoE-ig-46b"/>
+                                            <constraint firstAttribute="height" constant="110" id="nDS-sY-RXm"/>
+                                        </constraints>
+                                        <state key="normal" image="GREEN_UNLIT.png">
+                                            <color key="titleColor" red="0.50588235294117645" green="0.7803921568627451" blue="0.51764705882352935" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" red="0.50588235290000005" green="0.78039215689999997" blue="0.51764705879999995" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <state key="highlighted" image="Green_Lit.png">
+                                            <color key="titleColor" red="0.50588235290000005" green="0.78039215689999997" blue="0.51764705879999995" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" red="0.50588235294117645" green="0.7803921568627451" blue="0.51764705882352935" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="handleButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nQp-Gu-ht8"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
                                 <animations/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="110" id="Vt5-yR-VCi"/>
-                                    <constraint firstAttribute="width" secondItem="xrW-Mx-KDf" secondAttribute="height" multiplier="1:1" id="XDk-ig-Nsc"/>
-                                    <constraint firstAttribute="width" constant="110" id="ZrK-tx-9Ov"/>
+                                    <constraint firstAttribute="bottom" secondItem="4aZ-GD-K6w" secondAttribute="bottom" constant="117" id="07o-fW-zf5"/>
+                                    <constraint firstItem="7v7-JL-r9Y" firstAttribute="leading" secondItem="4aZ-GD-K6w" secondAttribute="trailing" constant="42" id="1zw-WB-uQ1"/>
+                                    <constraint firstItem="7v7-JL-r9Y" firstAttribute="centerX" secondItem="cIh-Yc-zas" secondAttribute="centerX" id="2Ui-4q-EsI"/>
+                                    <constraint firstItem="wET-fC-FIG" firstAttribute="leading" secondItem="a6m-t9-jak" secondAttribute="trailing" constant="8" id="3XC-LI-wOt"/>
+                                    <constraint firstItem="sPg-fD-hJP" firstAttribute="leading" secondItem="xrW-Mx-KDf" secondAttribute="leading" constant="-1" id="AYD-sU-b9z"/>
+                                    <constraint firstAttribute="bottom" secondItem="xrW-Mx-KDf" secondAttribute="bottom" constant="18" id="FAt-eU-b0P"/>
+                                    <constraint firstItem="gw9-xG-eBb" firstAttribute="centerX" secondItem="mLD-nC-91J" secondAttribute="centerX" constant="2" id="IPB-5F-7F5"/>
+                                    <constraint firstItem="gw9-xG-eBb" firstAttribute="top" secondItem="a6m-t9-jak" secondAttribute="bottom" constant="86" id="Jro-UW-S3A"/>
+                                    <constraint firstItem="cIh-Yc-zas" firstAttribute="top" secondItem="sPg-fD-hJP" secondAttribute="bottom" constant="8" id="KBC-yx-s11"/>
+                                    <constraint firstItem="sPg-fD-hJP" firstAttribute="centerX" secondItem="cIh-Yc-zas" secondAttribute="centerX" constant="-1" id="Ky1-cr-RJH"/>
+                                    <constraint firstItem="a6m-t9-jak" firstAttribute="centerX" secondItem="mLD-nC-91J" secondAttribute="centerX" constant="-14" id="LrU-9I-YTr"/>
+                                    <constraint firstItem="4aZ-GD-K6w" firstAttribute="top" secondItem="SNp-oH-Eze" secondAttribute="top" id="Nuv-eQ-TLm"/>
+                                    <constraint firstItem="SNp-oH-Eze" firstAttribute="leading" secondItem="xrW-Mx-KDf" secondAttribute="trailing" constant="1" id="TRI-Rp-yvx"/>
+                                    <constraint firstItem="1UR-JT-fe8" firstAttribute="centerX" secondItem="sPg-fD-hJP" secondAttribute="centerX" constant="1.5" id="XGy-MP-XPg"/>
+                                    <constraint firstItem="xrW-Mx-KDf" firstAttribute="top" secondItem="7v7-JL-r9Y" secondAttribute="bottom" constant="8" symbolic="YES" id="cuw-bp-ow9"/>
+                                    <constraint firstItem="1UR-JT-fe8" firstAttribute="top" secondItem="gw9-xG-eBb" secondAttribute="bottom" constant="8" id="hzM-pY-h7X"/>
+                                    <constraint firstItem="4aZ-GD-K6w" firstAttribute="bottom" secondItem="SNp-oH-Eze" secondAttribute="bottom" id="iB5-wr-6f4"/>
+                                    <constraint firstItem="7v7-JL-r9Y" firstAttribute="top" secondItem="cIh-Yc-zas" secondAttribute="bottom" id="kbK-Pt-xQV"/>
+                                    <constraint firstItem="SNp-oH-Eze" firstAttribute="leading" secondItem="wET-fC-FIG" secondAttribute="leading" constant="-1" id="mw3-L3-Y0r"/>
+                                    <constraint firstItem="sPg-fD-hJP" firstAttribute="trailing" secondItem="xrW-Mx-KDf" secondAttribute="trailing" constant="-1" id="pmr-7i-top"/>
+                                    <constraint firstItem="wET-fC-FIG" firstAttribute="firstBaseline" secondItem="a6m-t9-jak" secondAttribute="firstBaseline" id="s9o-fU-LlL"/>
+                                    <constraint firstItem="a6m-t9-jak" firstAttribute="top" secondItem="mLD-nC-91J" secondAttribute="top" constant="52" id="uLV-Wf-a1a"/>
+                                    <constraint firstItem="a6m-t9-jak" firstAttribute="centerY" secondItem="wET-fC-FIG" secondAttribute="centerY" id="zO4-UE-dO9"/>
                                 </constraints>
-                                <state key="normal" image="BLUE_UNLIT.png">
-                                    <color key="titleShadowColor" red="0.023529411764705882" green="0.25490196078431371" blue="0.53333333333333333" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <state key="highlighted" image="BLUE_LIT.png">
-                                    <color key="titleColor" red="0.30980392156862746" green="0.76470588235294112" blue="0.96862745098039216" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" red="0.30980392156862746" green="0.76470588235294112" blue="0.96862745098039216" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="handleButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vg3-CV-bK5"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LEVEL" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cIh-Yc-zas">
-                                <rect key="frame" x="272" y="368" width="56" height="28"/>
-                                <animations/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="28" id="rix-V5-Pbt"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="20"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7v7-JL-r9Y">
-                                <rect key="frame" x="291" y="392" width="18" height="41"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="30"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wET-fC-FIG">
-                                <rect key="frame" x="356" y="37" width="21" height="48"/>
-                                <animations/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="21" id="P6B-kI-bih"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="30"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HIGH SCORE:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a6m-t9-jak">
-                                <rect key="frame" x="222" y="47" width="126" height="28"/>
-                                <animations/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="28" id="Uz0-RM-C29"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="20"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="YOU LOST!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gw9-xG-eBb">
-                                <rect key="frame" x="248" y="154" width="104" height="28"/>
-                                <animations/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="28" id="ZHy-Zd-cdU"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="20"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TAP THE SCREEN TO START" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1UR-JT-fe8">
-                                <rect key="frame" x="172" y="190" width="257" height="28"/>
-                                <animations/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="28" id="OLN-SI-BYc"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="20"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SNp-oH-Eze" userLabel="Red" customClass="TransparentButton" customModule="TeamBlackSimonSays" customModuleProvider="target">
-                                <rect key="frame" x="350" y="350" width="110" height="110"/>
-                                <animations/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="SNp-oH-Eze" secondAttribute="height" multiplier="1:1" id="2Cj-rd-J0o"/>
-                                    <constraint firstAttribute="width" constant="110" id="P4y-d2-W1z"/>
-                                </constraints>
-                                <state key="normal" image="RED_UNLIT.png">
-                                    <color key="titleColor" red="0.93725490199999995" green="0.60392156860000001" blue="0.60392156860000001" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" red="0.6470588235294118" green="0.098039215686274508" blue="0.066666666666666666" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <state key="highlighted" image="RED_LIT.png">
-                                    <color key="titleColor" red="0.93725490196078431" green="0.60392156862745094" blue="0.60392156862745094" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" red="0.93725490196078431" green="0.60392156862745094" blue="0.60392156862745094" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="handleButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8jE-54-kA7"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="3" contentMode="scaleToFill" horizontalHuggingPriority="150" verticalHuggingPriority="150" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4aZ-GD-K6w" userLabel="Yellow" customClass="TransparentButton" customModule="TeamBlackSimonSays" customModuleProvider="target">
-                                <rect key="frame" x="140" y="350" width="110" height="110"/>
-                                <animations/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="4aZ-GD-K6w" secondAttribute="height" multiplier="1:1" id="VPV-5g-7FS"/>
-                                    <constraint firstAttribute="width" constant="110" id="ee5-9i-G5Z"/>
-                                    <constraint firstAttribute="height" constant="110" id="xb7-Ga-ZLy"/>
-                                </constraints>
-                                <state key="normal" image="YELLOW_UNLIT.png">
-                                    <color key="titleShadowColor" red="0.72156862745098038" green="0.70980392156862748" blue="0.11764705882352941" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <state key="highlighted" image="YELLOW_LIT.png">
-                                    <color key="titleColor" red="1" green="0.96078431372549022" blue="0.61568627450980395" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" red="1" green="0.96078431372549022" blue="0.61568627450980395" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="handleButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="v94-Hp-Vw5"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sPg-fD-hJP" userLabel="Green" customClass="TransparentButton" customModule="TeamBlackSimonSays" customModuleProvider="target">
-                                <rect key="frame" x="245" y="250" width="110" height="110"/>
-                                <animations/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="110" id="fsn-V8-Dsg"/>
-                                    <constraint firstAttribute="height" constant="110" id="ja7-BE-87E"/>
-                                    <constraint firstAttribute="width" secondItem="sPg-fD-hJP" secondAttribute="height" multiplier="1:1" id="uvm-wP-8Ey"/>
-                                </constraints>
-                                <state key="normal" image="GREEN_UNLIT.png">
-                                    <color key="titleColor" red="0.50588235294117645" green="0.7803921568627451" blue="0.51764705882352935" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" red="0.50588235290000005" green="0.78039215689999997" blue="0.51764705879999995" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <state key="highlighted" image="Green_Lit.png">
-                                    <color key="titleColor" red="0.50588235290000005" green="0.78039215689999997" blue="0.51764705879999995" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" red="0.50588235294117645" green="0.7803921568627451" blue="0.51764705882352935" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="handleButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nQp-Gu-ht8"/>
-                                </connections>
-                            </button>
+                            </view>
                         </subviews>
                         <animations/>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="tintColor" name="alternateSelectedControlTextColor" catalog="System" colorSpace="catalog"/>
                         <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="cIh-Yc-zas" firstAttribute="centerX" secondItem="7v7-JL-r9Y" secondAttribute="centerX" id="1mn-vP-gse"/>
-                            <constraint firstItem="wET-fC-FIG" firstAttribute="firstBaseline" secondItem="a6m-t9-jak" secondAttribute="firstBaseline" id="2Dd-Ed-uMt"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="xrW-Mx-KDf" secondAttribute="bottom" constant="48" id="5Tm-bp-m5m"/>
-                            <constraint firstItem="gw9-xG-eBb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9xG-fg-Vo1"/>
-                            <constraint firstItem="1UR-JT-fe8" firstAttribute="centerX" secondItem="gw9-xG-eBb" secondAttribute="centerX" id="Gfm-n2-IXX"/>
-                            <constraint firstItem="a6m-t9-jak" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-15" id="GkX-Ga-h2S"/>
-                            <constraint firstItem="wET-fC-FIG" firstAttribute="centerY" secondItem="a6m-t9-jak" secondAttribute="centerY" id="L76-04-GPK"/>
-                            <constraint firstItem="xrW-Mx-KDf" firstAttribute="top" secondItem="7v7-JL-r9Y" secondAttribute="bottom" constant="9" id="PE7-jj-b4a"/>
-                            <constraint firstItem="cIh-Yc-zas" firstAttribute="leading" secondItem="4aZ-GD-K6w" secondAttribute="trailing" constant="22" id="QTA-T4-Of2"/>
-                            <constraint firstItem="wET-fC-FIG" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="17" id="RhD-PZ-B45"/>
-                            <constraint firstItem="sPg-fD-hJP" firstAttribute="leading" secondItem="xrW-Mx-KDf" secondAttribute="leading" id="TT8-lV-3lE"/>
-                            <constraint firstItem="xrW-Mx-KDf" firstAttribute="top" secondItem="cIh-Yc-zas" secondAttribute="bottom" constant="46" id="WZM-EJ-5QI"/>
-                            <constraint firstItem="SNp-oH-Eze" firstAttribute="top" secondItem="4aZ-GD-K6w" secondAttribute="top" id="bwF-UH-Aoa"/>
-                            <constraint firstItem="1UR-JT-fe8" firstAttribute="top" secondItem="gw9-xG-eBb" secondAttribute="bottom" constant="8" symbolic="YES" id="cCA-xQ-VrR"/>
-                            <constraint firstItem="sPg-fD-hJP" firstAttribute="top" secondItem="1UR-JT-fe8" secondAttribute="bottom" constant="32" id="eDN-wB-vPT"/>
-                            <constraint firstItem="sPg-fD-hJP" firstAttribute="centerX" secondItem="1UR-JT-fe8" secondAttribute="centerX" id="gSo-RG-Mt6"/>
-                            <constraint firstItem="wET-fC-FIG" firstAttribute="leading" secondItem="a6m-t9-jak" secondAttribute="trailing" constant="8" symbolic="YES" id="k6B-Bn-NWv"/>
-                            <constraint firstItem="gw9-xG-eBb" firstAttribute="top" secondItem="a6m-t9-jak" secondAttribute="bottom" constant="79" id="l8L-am-601"/>
-                            <constraint firstItem="SNp-oH-Eze" firstAttribute="bottom" secondItem="4aZ-GD-K6w" secondAttribute="bottom" id="n1x-iT-dKY"/>
-                            <constraint firstItem="sPg-fD-hJP" firstAttribute="trailing" secondItem="xrW-Mx-KDf" secondAttribute="trailing" id="ngb-et-aHD"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="4aZ-GD-K6w" secondAttribute="bottom" constant="140" id="pna-Yv-wrL"/>
-                            <constraint firstItem="cIh-Yc-zas" firstAttribute="top" secondItem="sPg-fD-hJP" secondAttribute="bottom" constant="8" symbolic="YES" id="u2h-Sc-cZc"/>
-                            <constraint firstItem="SNp-oH-Eze" firstAttribute="leading" secondItem="cIh-Yc-zas" secondAttribute="trailing" constant="22" id="v0c-pJ-va0"/>
-                            <constraint firstItem="cIh-Yc-zas" firstAttribute="centerX" secondItem="sPg-fD-hJP" secondAttribute="centerX" id="zq1-1I-ISS"/>
+                            <constraint firstAttribute="trailing" secondItem="mLD-nC-91J" secondAttribute="trailing" id="CiW-tc-OSg"/>
+                            <constraint firstItem="mLD-nC-91J" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="FcF-MK-TBD"/>
+                            <constraint firstItem="mLD-nC-91J" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="LUC-a8-eM0"/>
+                            <constraint firstItem="mLD-nC-91J" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ST0-Bf-uYa"/>
                         </constraints>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="crM-tm-71Z" appends="YES" id="5K9-yr-w6E"/>
@@ -206,7 +221,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="686" y="572"/>
+            <point key="canvasLocation" x="892" y="402"/>
         </scene>
     </scenes>
     <resources>

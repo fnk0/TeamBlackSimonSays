@@ -8,6 +8,7 @@
 //s
 
 import Foundation
+import AVFoundation
 
 protocol SimonGameProtocol {
     
@@ -22,8 +23,15 @@ protocol SimonGameProtocol {
 // The idea is to replace the current instance with a new one.
 class SimonGame {
     
+    // blue = G3
+    // red = e4
+    // green = g5
+    // yellow = c5
+    var beeps = [AVAudioPlayer]()
+    let beepNames = ["g3", "e4", "g5", "c5"]
+    
     static let HighlightTime = 1.0
-
+    
     let defaults = NSUserDefaults.standardUserDefaults()
     static let highScoreString : String = "High Score"
     
@@ -43,6 +51,10 @@ class SimonGame {
     
     required init(delegate : SimonGameProtocol) {
         self.delegate = delegate
+        beeps = [AVAudioPlayer]()
+        for b in beepNames {
+            beeps.append(setupAudioPlayerWithFile(b)!)
+        }
     }
     
     func startGame() {
@@ -61,9 +73,9 @@ class SimonGame {
         let eval = colors[currentPress] == color
         
         if eval {
-            
             if currentPress == (defaultLevel - 1) {
                 delegate?.didWinTheGame()
+                return
             }
             
             if currentPress == (currentLevel - 1) {
@@ -81,5 +93,15 @@ class SimonGame {
         print("Starting new level...")
         currentPress = 0
         delegate?.playButtons(0, position: currentLevel, colors: colors)
+    }
+    
+    func setupAudioPlayerWithFile(fileName: NSString) -> AVAudioPlayer?  {
+        let path = NSBundle.mainBundle().pathForResource(fileName as String, ofType: "mp3")
+        let url = NSURL.fileURLWithPath(path!)
+        do {
+            return try AVAudioPlayer(contentsOfURL: url)
+        } catch {
+            return nil
+        }
     }
 }

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 class GameController: UIViewController, SimonGameProtocol {
     
@@ -54,6 +55,7 @@ class GameController: UIViewController, SimonGameProtocol {
     
     func animateBtn(index: Int, position: Int, colors: [SimonColor]) {
         let button = buttons[colors[index].rawValue]
+        playBeep(colors[index])
         print("Playing button with index: \(index) and color \(colors[index])")
         UIView.animateWithDuration(SimonGame.HighlightTime / 2,
             delay: 0.0,
@@ -133,6 +135,10 @@ class GameController: UIViewController, SimonGameProtocol {
         gameState = GameState.NotPlaying
         self.winLostLabel.text = "You lose :("
         self.startLabel.text = "TAP THE SCREEN TO START"
+    }
+    
+    func playBeep(color: SimonColor) {
+        game?.beeps[color.rawValue].play()
     }
     
     func updateHighScore() {
