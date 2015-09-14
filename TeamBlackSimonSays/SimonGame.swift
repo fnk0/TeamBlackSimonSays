@@ -23,6 +23,9 @@ protocol SimonGameProtocol {
 class SimonGame {
     
     static let HighlightTime = 1.0
+
+    let defaults = NSUserDefaults.standardUserDefaults()
+    static let highScoreString : String = "High Score"
     
     var delegate : SimonGameProtocol?
     

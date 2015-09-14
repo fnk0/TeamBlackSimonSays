@@ -26,7 +26,6 @@ class GameController: UIViewController, SimonGameProtocol {
     
     var buttons : [TransparentButton] = []
     
-    var userDefaults : NSUserDefaults?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -131,6 +130,22 @@ class GameController: UIViewController, SimonGameProtocol {
         gameState = GameState.NotPlaying
         self.winLostLabel.text = "You lose :("
         self.startLabel.text = "TAP THE SCREEN TO START"
+    }
+    
+    func updateHighScore() {
+        
+        var scoreToSave = Int(currentLevelLabel.text!)
+        
+        if let score = game?.defaults.valueForKey(SimonGame.highScoreString) as! String? {
+            
+            if scoreToSave < Int(score) {
+                scoreToSave = Int(score)
+            }
+            
+        }
+        
+        game!.defaults.setValue(scoreToSave, forKey: SimonGame.highScoreString)
+
     }
 }
 
