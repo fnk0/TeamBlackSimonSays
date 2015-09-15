@@ -27,6 +27,10 @@ class GameController: UIViewController, SimonGameProtocol {
     
     var buttons : [TransparentButton] = []
     
+    // Sets the status bar to white instead of black.
+    override func preferredStatusBarStyle() -> UIStatusBarStyle {
+        return UIStatusBarStyle.LightContent
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
