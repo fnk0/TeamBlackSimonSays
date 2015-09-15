@@ -62,16 +62,6 @@
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wET-fC-FIG">
-                                        <rect key="frame" x="357" y="42" width="21" height="48"/>
-                                        <animations/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="21" id="Zhm-y0-sJY"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="30"/>
-                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HIGH SCORE:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a6m-t9-jak">
                                         <rect key="frame" x="223" y="52" width="126" height="28"/>
                                         <animations/>
@@ -159,6 +149,16 @@
                                             <action selector="handleButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nQp-Gu-ht8"/>
                                         </connections>
                                     </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wET-fC-FIG">
+                                        <rect key="frame" x="356" y="42" width="36" height="48"/>
+                                        <animations/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="36" id="Zhm-y0-sJY"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="30"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <animations/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -166,7 +166,7 @@
                                     <constraint firstAttribute="bottom" secondItem="4aZ-GD-K6w" secondAttribute="bottom" constant="117" id="07o-fW-zf5"/>
                                     <constraint firstItem="7v7-JL-r9Y" firstAttribute="leading" secondItem="4aZ-GD-K6w" secondAttribute="trailing" constant="42" id="1zw-WB-uQ1"/>
                                     <constraint firstItem="7v7-JL-r9Y" firstAttribute="centerX" secondItem="cIh-Yc-zas" secondAttribute="centerX" id="2Ui-4q-EsI"/>
-                                    <constraint firstItem="wET-fC-FIG" firstAttribute="leading" secondItem="a6m-t9-jak" secondAttribute="trailing" constant="8" id="3XC-LI-wOt"/>
+                                    <constraint firstItem="wET-fC-FIG" firstAttribute="leading" secondItem="a6m-t9-jak" secondAttribute="trailing" constant="7" id="3XC-LI-wOt"/>
                                     <constraint firstItem="sPg-fD-hJP" firstAttribute="leading" secondItem="xrW-Mx-KDf" secondAttribute="leading" constant="-1" id="AYD-sU-b9z"/>
                                     <constraint firstAttribute="bottom" secondItem="xrW-Mx-KDf" secondAttribute="bottom" constant="18" id="FAt-eU-b0P"/>
                                     <constraint firstItem="gw9-xG-eBb" firstAttribute="centerX" secondItem="mLD-nC-91J" secondAttribute="centerX" constant="2" id="IPB-5F-7F5"/>
@@ -181,7 +181,7 @@
                                     <constraint firstItem="1UR-JT-fe8" firstAttribute="top" secondItem="gw9-xG-eBb" secondAttribute="bottom" constant="8" id="hzM-pY-h7X"/>
                                     <constraint firstItem="4aZ-GD-K6w" firstAttribute="bottom" secondItem="SNp-oH-Eze" secondAttribute="bottom" id="iB5-wr-6f4"/>
                                     <constraint firstItem="7v7-JL-r9Y" firstAttribute="top" secondItem="cIh-Yc-zas" secondAttribute="bottom" id="kbK-Pt-xQV"/>
-                                    <constraint firstItem="SNp-oH-Eze" firstAttribute="leading" secondItem="wET-fC-FIG" secondAttribute="leading" constant="-1" id="mw3-L3-Y0r"/>
+                                    <constraint firstItem="SNp-oH-Eze" firstAttribute="leading" secondItem="wET-fC-FIG" secondAttribute="leading" id="mw3-L3-Y0r"/>
                                     <constraint firstItem="sPg-fD-hJP" firstAttribute="trailing" secondItem="xrW-Mx-KDf" secondAttribute="trailing" constant="-1" id="pmr-7i-top"/>
                                     <constraint firstItem="wET-fC-FIG" firstAttribute="firstBaseline" secondItem="a6m-t9-jak" secondAttribute="firstBaseline" id="s9o-fU-LlL"/>
                                     <constraint firstItem="a6m-t9-jak" firstAttribute="top" secondItem="mLD-nC-91J" secondAttribute="top" constant="52" id="uLV-Wf-a1a"/>

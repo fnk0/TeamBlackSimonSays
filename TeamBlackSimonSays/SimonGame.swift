@@ -14,6 +14,7 @@ protocol SimonGameProtocol {
     func didWinTheGame()
     func didLostTheGame()
     func playButtons(start : Int, position : Int, colors : [SimonColor])
+    func animateBtn(start : Int, position: Int, colors: [SimonColor])
 }
 
 // This file purpose is to hold a single Simon Game

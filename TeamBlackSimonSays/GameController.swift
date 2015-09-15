@@ -88,8 +88,10 @@ class GameController: UIViewController, SimonGameProtocol {
                         
                     },
                     completion: { finished in
-                        let newIndex = index + 1
-                        self.playButtons(newIndex, position: position, colors: colors)
+                        if self.gameState == GameState.SequencePlaying {
+                            let newIndex = index + 1
+                            self.playButtons(newIndex, position: position, colors: colors)
+                        }
                 })
         })
     }
