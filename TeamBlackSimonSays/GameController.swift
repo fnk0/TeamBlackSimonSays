@@ -52,6 +52,7 @@ class GameController: UIViewController, SimonGameProtocol {
     @IBAction func handleButtonPressed(sender: UIButton) {
         if gameState == GameState.HumanPlaying {
             if let color = SimonColor(rawValue: sender.tag) {
+                playBeep(color)
                 game?.evaluate(color)
             }
         }
@@ -128,7 +129,6 @@ class GameController: UIViewController, SimonGameProtocol {
     }
     
     func didWinTheGame() {
-        print("Win the game!")
         updateHighScore()
         gameState = GameState.NotPlaying
         self.winLostLabel.text = "You win!!"
@@ -136,7 +136,6 @@ class GameController: UIViewController, SimonGameProtocol {
     }
     
     func didLostTheGame() {
-        print("Lost the game!")
         updateHighScore()
         gameState = GameState.NotPlaying
         self.winLostLabel.text = "You lose :("
@@ -148,11 +147,8 @@ class GameController: UIViewController, SimonGameProtocol {
     }
     
     func updateHighScore() {
-        
         if var level = Int(currentLevelLabel.text!) {
-            
             level = level - 1
-            
             if let score = game?.defaults.valueForKey(SimonGame.highScoreString) as! Int? {
                 
                 if level < score {
@@ -160,11 +156,9 @@ class GameController: UIViewController, SimonGameProtocol {
                 }
                 
             }
-            
             game!.defaults.setValue(level, forKey: SimonGame.highScoreString)
             highScoreLabel.text = "\(level)"
             print ("\(level)")
-            
         }
     }
     

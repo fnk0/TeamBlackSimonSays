@@ -70,7 +70,6 @@ class SimonGame {
     // It should return true if the user wins the game or false if the user loses
     func evaluate(color : SimonColor) {
         let eval = colors[currentPress] == color
-        
         if eval {
             if currentPress == (defaultLevel - 1) {
                 delegate?.didWinTheGame()
