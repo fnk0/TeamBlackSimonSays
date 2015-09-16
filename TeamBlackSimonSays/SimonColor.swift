@@ -9,7 +9,6 @@
 import Foundation
 
 // Enum to hold the possible button colors for the Simon game
-
 enum SimonColor : Int {
     
     case Blue = 0
